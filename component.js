@@ -15,6 +15,14 @@
     return null;
   }
 
+  self.prototype.willRender = function(){
+    return null;
+  }
+
+  self.prototype.didRender = function(){
+    return null;
+  }
+
   self.prototype.getInitialState = function(){
     return {};
   }
@@ -23,6 +31,8 @@
     for (var property in state){
       this.state[property] = state[property];
     }
+
+    Newton.DOM.update(this);
   }
 
 })(window.Newton);

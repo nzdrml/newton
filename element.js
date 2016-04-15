@@ -65,7 +65,7 @@
     for (var i in this.children){
       var child = this.children[i];
 
-      if ( typeof child === 'string' ){
+      if (typeof child === 'string'){
         var node = document.createTextNode(child);
       }
       else {

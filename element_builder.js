@@ -10,6 +10,7 @@
         var component = new objectType(attributes);
         var element = component.render();
 
+        element.attributes = element.attributes || {}
         element.attributes['data-newtonid'] = component.getUID();
         element.setMainComponent(component);
       }
